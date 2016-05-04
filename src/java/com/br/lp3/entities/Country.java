@@ -11,14 +11,14 @@ import java.io.Serializable;
  *
  * @author 31596861
  */
-public class Pais implements Serializable{
+public class Country implements Serializable{
     
     private String name, initials;
 
-    public Pais() {
+    public Country() {
     }
 
-    public Pais(String name, String inittials) {
+    public Country(String name, String inittials) {
         this.name = name;
         this.initials = initials;
     }
@@ -41,7 +41,7 @@ public class Pais implements Serializable{
 
     @Override
     public String toString() {
-        return "Pais{" + "name=" + name + ", initials=" + initials + '}';
+        return "Country{" + "name=" + name + ", initials=" + initials + '}';
     }
     
 }

@@ -14,13 +14,13 @@ import java.io.Serializable;
 public class Pet implements Serializable{
     
     private String name, photo, description, age, race, city;
-    Estado state;
-    Pais country;
+    State state;
+    Country country;
 
     public Pet() {
     }
 
-    public Pet(String name, String photo, String description, String age, String race, String city, Estado state, Pais country) {
+    public Pet(String name, String photo, String description, String age, String race, String city, State state, Country country) {
         this.name = name;
         this.photo = photo;
         this.description = description;
@@ -79,19 +79,19 @@ public class Pet implements Serializable{
         this.city = city;
     }
 
-    public Estado getState() {
+    public State getState() {
         return state;
     }
 
-    public void setState(Estado state) {
+    public void setState(State state) {
         this.state = state;
     }
 
-    public Pais getCountry() {
+    public Country getCountry() {
         return country;
     }
 
-    public void setCountry(Pais country) {
+    public void setCountry(Country country) {
         this.country = country;
     }
 

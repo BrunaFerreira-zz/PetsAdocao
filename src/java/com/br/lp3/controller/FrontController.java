@@ -47,10 +47,8 @@ public class FrontController extends HttpServlet {
 
             String content = ConnectionManager.readContent("http://pedrocacique.com/lp3/getAllPets");
             List<Pet> petLista = JSONPetParse.parseFeed(content);
-            for (int i = 0; i < petLista.size(); i++) {
-                out.println(petLista.get(i));
-            }
-            
+            request.getSession().setAttribute("pets", petLista);
+            response.sendRedirect("pets.jsp");
             out.println("</body>");
             out.println("</html>");
         }

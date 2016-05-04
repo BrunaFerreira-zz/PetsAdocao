@@ -11,14 +11,14 @@ import java.io.Serializable;
  *
  * @author 31596861
  */
-public class Estado implements Serializable{
+public class State implements Serializable{
     
     private String name, initials;
 
-    public Estado() {
+    public State() {
     }
 
-    public Estado(String name, String initials) {
+    public State(String name, String initials) {
         this.name = name;
         this.initials = initials;
     }

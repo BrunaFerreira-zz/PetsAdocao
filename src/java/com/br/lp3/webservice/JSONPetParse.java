@@ -5,8 +5,8 @@
  */
 package com.br.lp3.webservice;
 
-import com.br.lp3.entities.Estado;
-import com.br.lp3.entities.Pais;
+import com.br.lp3.entities.State;
+import com.br.lp3.entities.Country;
 import com.br.lp3.entities.Pet;
 import java.io.StringReader;
 import java.util.ArrayList;
@@ -50,8 +50,8 @@ public class JSONPetParse {
         String initialsCountry = countryObj.getString("initials");
 
         Pet petUnit = new Pet(name, photo, description, age, race, city,
-                new Estado(nameState, initials),
-                new Pais(nameCountry, initialsCountry));
+                new State(nameState, initials),
+                new Country(nameCountry, initialsCountry));
         pet.add(petUnit);
         }
         
